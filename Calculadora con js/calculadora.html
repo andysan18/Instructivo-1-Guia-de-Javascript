@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="calculadora.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<div class="card">
+				<p id="error" style="text-align: center;"></p>
+				<div class="resultados">
+					<p id="primerNro"></p>
+					<p id="operador">+</p>
+					<p id="segundoNro"></p>
+				</div>				
+				<div class="panel">
+					<div class="grid-item item1">
+						<button class="numeros" onclick="escribirNumero(7)">7</button>
+					</div>
+					<div class="grid-item item2" id="nro">
+						<button class="numeros" onclick="escribirNumero(8)">8</button>
+					</div>
+					<div class="grid-item item3" id="nro">
+						<button class="numeros" onclick="escribirNumero(9)">9</button>
+					</div>
+					<div class="grid-item item4" id="op">
+						<button class="operador" onclick="escribirOperador('dividir')">÷</button>
+					</div>
+					<div class="grid-item item5" id="op">
+						<button class="operador" onclick="cambiarSigno()">+/-</button>
+					</div>
+					<div class="grid-item item6" id="nro">
+						<button class="numeros" onclick="escribirNumero(4)">4</button>
+					</div>
+					<div class="grid-item item7" id="nro">
+						<button class="numeros" onclick="escribirNumero(5)">5</button>
+					</div>
+					<div class="grid-item item8" id="nro">
+						<button class="numeros" onclick="escribirNumero(6)">6</button>
+					</div>
+					<div class="grid-item item9" id="op">
+						<button class="operador" onclick="escribirOperador('multiplicar')">x</button>
+					</div>
+					<div class="grid-item item10" id="borrar">
+						<button class="iconoBorrar" onclick="borrar()">
+							<span class="material-icons">backspace</span>
+						</button>
+					</div>
+					<div class="grid-item item11" id="nro">
+						<button class="numeros" onclick="escribirNumero(1)">1</button>
+					</div>
+					<div class="grid-item item12" id="nro">
+						<button class="numeros" onclick="escribirNumero(2)">2</button>
+					</div>
+					<div class="grid-item item13" id="nro">
+						<button class="numeros" onclick="escribirNumero(3)">3</button>
+					</div>  
+					<div class="grid-item item14" id="op">
+						<button class="operador" onclick="escribirOperador('restar')">-</button>
+					</div>
+					<div class="grid-item item15">
+						<button class="igual" onclick="realizarOperacion()">=</button>
+					</div>
+					<div class="grid-item item16" id="nro">
+						<button class="numeros" id="C" onclick="limpiar()">C</button>
+					</div>
+					<div class="grid-item item17" id="nro">
+						<button class="numeros" onclick="escribirNumero(0)">0</button>
+					</div>
+					<div class="grid-item item18" id="nro">
+						<button class="numeros" onclick="decimal()">.</button>
+					</div>
+					<div class="grid-item item19" id="op">
+						<button class="operador" onclick="escribirOperador('sumar')">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="calculadora.js"></script>
+</body>
+
+</html>

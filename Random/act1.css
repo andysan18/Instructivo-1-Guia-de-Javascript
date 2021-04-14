@@ -1,0 +1,11 @@
+.container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+#boton{
+    margin: 30px;
+}
